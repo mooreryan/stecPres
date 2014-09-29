@@ -1,0 +1,42 @@
+30 july 2014
+
+small dots = OTUs
+larger dots = serotypes
+
+length of line = p-value
+- longer = less significant
+- shorter = more significant
+
+width of line = fold change
+- thicker = higher fold change
+- thinner = lower fold change
+
+transparency of line = fold change
+- less transparent = higer fold change
+- more transparent = lower fold change
+
+color of small dots = phylogenetic similarity 
+- color gradient pinkish to greenish
+- colors that are opposite on the color wheel are on opposite sides of
+  the phylogentic tree
+
+size of serotype nodes = number of samples containing that serotype
+- larger = more samples
+- smaller = less samples
+
+If an OTU node is connected to a serotype node with a yellow line, it
+means that that OTU was significantly upregulated by only that
+serotype. If it is connected by a blue line, then that OTU is
+significantly downregulated only by that OTU.
+
+There are more OTUs that were either significantly upregulated or
+downregulated by each OTU, but only the ones that were unique to each
+OTU are on the star graph.
+
+Statistical test = kruskal wallis
+
+No bonferroni or benjammaini (spelling?) correction was used as there
+were so many statistical comparisons (as there were so many OTUs) that
+almost none of the OTUs would be significant with the correction. This
+means that some of the OTUs that pass the p-value cutoff might
+actually be false positives.

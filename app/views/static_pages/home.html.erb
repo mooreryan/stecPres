@@ -1,0 +1,345 @@
+<!-- Wrap the entire slide show in a div using the "reveal" class. -->
+<div class="reveal">
+  <!-- Wrap all slides in a single "slides" class -->
+  <div class="slides">
+
+    <!-- ALL SLIDES GO HERE -->
+    <!-- Each section element contains an individual slide -->
+    <section>
+      <section>
+        <div align="left">
+          <h1>More than skin deep</h1>
+          <h4>Exploring the connection between bacterial community diversity & pathogenic <em>E. coli</em> on pre-harvest cattle hides</h4>
+          By Ryan Moore & Jessica Chopyk
+	</div>
+      </section>
+      
+      <section>
+	<!-- <img src="app/assets/images/transparent_cow.gif" height=600px> -->
+	<%= image_tag "transparent_cow.gif", height: 600 %>
+      </section>
+    </section>
+
+    <!-- Intro -->
+    <section>
+      <section><h2>Background</h2></section>
+
+      <section>
+	<h2>Fun facts!</h2>
+	<ul>
+	  <li>Shiga-toxigenic <em>E. coli</em> (STEC) cause over 200,000 illnesses and ~20 deaths per year</li>
+	  <li>Zoonotic pathogens</li>
+	  <ul class='smaller'>
+	    <li>Primarily lower gastrointestinal tracts of cattle & other ruminants</li>
+	    <li>Infection generally from contaminated beef
+	  </ul>
+	  <li>Causes diarrhea, hemorrhagic colitis, hemolytic uremic syndrome (HUS)</li>
+	  <li>O157:H7 most widely characterized/studied</li>
+	  <ul class='smaller'>
+	    <li>~20-50% of infections caused by non-O157 serogroups</li>
+	  </ul>
+	</ul>
+      </section>
+
+      <section><%= image_tag "ecoli-sign.jpg" %>
+	<p class="citation"><a href="http://goo.gl/FqEVmU" target="_blank">http://goo.gl/FqEVmU</a>
+      </section>
+
+      <section>
+	<h2>Indigenous microflora<br>& invading pathogens</h2>
+	<ul>
+	  <li>Indigenous microflora mitigate proliferation of invading pathogens</li>
+	  <ul class='smaller'>
+	    <li>Predation</li>
+	    <li>Nutrient competition</li>
+	    <li>Antagonism</li>
+	    <li>Antimicrobial compounds</li>
+	  </ul>
+	</ul>
+      </section>
+
+      <section>
+	<h2><em>E. coli</em> and diversity</h2>
+	<ul>
+	  <li><em>E. coli</em> survies at greater proportion in low diversity environments</li>
+	  <li>Microbial diversity negatively corrleated w/invasion of <em>E. coli</em> and <em>L. monocytogenes</em> (soil and manure)</li>	      
+	</ul>
+	<h4><br><br>Indigenous populations interact w/pathogen populations</h4>
+	<p class="smaller">Especially if commensal population highly diverse
+      </section>
+
+      <section>
+	<h2>Cattle hide &<br>beef processing</h2>
+	<ul>
+	  <li>Hide is often point of contamination for carcass and other animals</li>
+	  <li>Hide positive samples more indicative of carcass contamination than fecal positive samples</li>
+	  <li>Efforts to prevent hide contamination</li>
+	  <ul class="smaller">
+	    <li>Dehairing
+	    <li>Washes with water, chemicals, organic acids, and bacteriophage</li>
+	  </ul>
+	</ul>
+      </section>
+    </section>
+
+    <section>
+      <section><h2>Overview</h2></section>
+      <section>
+	<h2>Study overview</h2>
+	<ul>
+	  <li>Collect samples from feedlot</li>
+	  <li>Classify STEC infection status</li>
+	  <li>High throughput 16S rRNA sequencing</li>
+	  <li>Perfom magic (aka analyze data)</li>
+	</ul>
+      </section>
+
+      <section>
+	<%= image_tag "hide.jpg" %>
+      </section>
+
+      <section>
+	<h2>Results</h2>
+	<h6>(from 10,000 feet)</h6>
+	<ul>
+	  <li>STEC presence <=> slight changes in community profile</li>
+	  <li>OTUs specific to infection status</li>
+	  <li>STEC presence negatively correlated w/community richness</li>
+	</ul><br><br>
+	<h3 class="fragment">STEC presence may have an impact on diversity of pre-harvest cattle hide</h3>
+      </section>
+    </section>
+
+    <section>  
+      <section>
+	<h4>At the feedlot</h4>
+	<%= image_tag "feedlot.jpg" %>
+      </section>
+
+      <section>
+	<h2>Collecting samples</h2>
+	<ul>
+	  <li>Summer 2013 - 12 weeks</li>
+	  <li>Fecal, carcass, and hide samples</li>
+	  <li>576 samples of each type (48 per week)</li>
+	  <li>24 pens</li>
+	  <a href="http://www.neogen.com/FoodSafety/NS_STEC.asp" target="_blank"><li>NeoSeek&trade; STEC confirmation</li></a>
+	</ul>
+      </section>
+
+      <section>
+	<h3>Walking to Broken Bow!</h3>
+	<iframe name="map" src="about" width="1120" height="500" frameborder="0" style="border:0"></iframe>
+	<a target="map" href="https://www.google.com/maps/embed?pb=!1m29!1m12!1m3!1d12453322.47254005!2d-96.51071142916696!3d40.35649847260002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m14!1i0!3e2!4m5!1s0x89c77a9ae39789eb%3A0x2ee246f2974c385c!2sNewark%2C+DE%2C+USA!3m2!1d39.683722599999996!2d-75.7496572!4m5!1s0x879c5b86333f75f3%3A0xbbb3b2291086d471!2sBroken+Bow%2C+NE+68822!3m2!1d41.401787!2d-99.64122429999999!5e0!3m2!1sen!2sus!4v1409970532215">On</a>
+	<a target="map" href="about">Off</a>	    
+      </section>
+    </section>
+
+    <section>
+      <section>
+	<h2>Processing samples</h2></section>
+
+      <section>
+	<h2>Why 16S?</h2>
+	<ul>
+	  <li>16S rRNA gene is ubiquitous</li>
+	  <li>Has both conserved and variable regions</li>
+	  <li>Tons of studies <=> good for comparing!</li>
+	  <li>16S phylogenies agree well with other gene phylogenies</li>
+	  <ul class="smaller">
+	    <li>Likely to represent evolutionary history of organism as a whole
+	  </ul>
+	</ul><br><br>
+	<h3 class="fragment">Good overview of community</h3>
+      </section>
+
+      <section>
+	<%= image_tag "16S.gif", id: 'noborder' %><br>
+      </section>
+
+      <section>
+	<%= image_tag "16S-experiment.svg", id: 'noborder' %>
+      </section>
+    </section>	
+
+    <section>
+      <section>
+	<div>
+	  <h2>16S Community profile</h2>
+	  <p><em>Just what's in there!?</em></p></div></section>
+
+      <section>
+	<h3>Choosing sequence cutoff</h3>
+	<!-- width=450px> -->
+	<%= image_tag "chao1SampleID-trans.gif", width: 450 %> 
+	<%= image_tag "PD_whole_treeSampleID-trans.gif",
+	    width: 450 %>
+      </section>
+      
+      <section>
+	<h3>Phyla</h3>
+	<!-- 550 height -->
+	<%= image_tag "phyla_trans.gif", height: 550 %><br></section>
+
+      <section>
+	<h3>Orders</h3>
+	<!-- 550 height -->
+	<%= image_tag "orders_trans.gif",
+	    height: 550 %><br></section></section>
+    
+    <section>
+      <section id="beta-div-graphs">
+	<a href="#/beta-div-metrics"><h2>Beta diversity</h2></a></section>
+
+      <section id="weighted-unifrac-graph-all">
+	<h3>Weighted UniFrac</h3>
+	<%= image_tag "color-by-date-2.png" %>
+	
+      </section>
+
+      <!-- <section id="weighted-unifrac-graph-date"> -->
+      <!--   <a href="#/weighted-unifrac-info"><h3>UniFrac (date)</h3></a> -->
+      <!--   <iframe name="emperor-date" width="800" height="550" src="wommack-sigil.html"></iframe><br> -->
+      <!--   <a target="emperor-date" -->
+      <!--      href="emperor/emperor_pcoa_plots_pooled_by_date/index.html">On</a> -->
+      <!--   <a target="emperor-date" href="wommack-sigil.html">Off</a> -->
+      <!-- </section> -->
+
+      <section id="weighted-unifrac-graph-infection-status">
+	<a href="#/weighted-unifrac-info">
+	  <h3>UniFrac</h3>
+	  <h4>Infection status</h4>
+	</a>
+	<!-- 500 height -->
+	<%= image_tag "unweighted-unifrac-by-InfectionStatus.png",
+	    height: 500 %>
+      </section>
+      
+    </section>
+
+    <section>
+      <section>
+	<h2>Significant OTUs</h2></section>
+
+      <section>
+	<h3>Star graph!</h3>
+	<!-- height 500 -->
+	<%= image_tag "star_graph_labeled_with_tree.png",
+	    height: 500 %></section>
+
+      <section>
+	<h3>OTUs by STEC presence</h3>
+	<!-- height 500 -->
+	<%= image_tag "jess-fig-new.003.png", height: 500 %>
+      </section>  
+
+    </section>
+
+    <section>
+      <section id="alpha-div-graphs">
+	<a href="#/alpha-div-metrics"><h2>Alpha diversity</h2></a></section>
+
+      <section>
+	<h2>Jackknifed<br>alpha diversity</h2>
+
+	<ul>
+	  <li>Pooled by number of STEC strains</li>
+	  <ul class='smaller'><li>100 jackknifes, 190,000 sequences each</li></ul>
+	  <li>Pool samples by STEC category</li>
+	  <ul class='smaller'><li>100 jackknifes, 140,000 sequences each</li></ul>
+	</ul>
+      </section>
+
+      <section>
+	<h3>Pooled by num STEC strains</h3>
+	<!-- height 500 -->
+	<%= image_tag "alpha_div_graph_num_stec_strains_condensed.gif",
+	    height: 500 %>
+      </section>
+
+      <section>
+	<h3>Pooled by infection status</h3>
+	<!-- height 500 -->
+	<%= image_tag "alpha_div_graph_InfectionStatus.gif", height: 500 %>
+      </section>
+    </section>
+
+    <section>
+      <section><h2>Wrap it up!</h2></section>
+      
+      <section>
+	<h2>What we did...</h2>
+	<ul>
+	  <li>Collected samples from feedlot</li>
+	  <li>Classified STEC infection status</li>
+	  <li>Construct 16S community profiles</li>
+	  <li>Wrangled the data!</li>
+	</ul>
+      </section>
+
+      <section>
+	<h2>What we found...</h2>
+	<ul>
+	  <li>STEC presence <=> slight changes in community profile</li>
+	  <li>Certain OTUs specific to infection status</li>
+	  <li>STEC presence was negatively correlated w/alpha diversity</li>
+	</ul><br><br>
+	<h3 class="fragment">STEC presence may have an impact on diversity of pre-harvest cattle hide</h3>
+      </section>
+
+      <section>
+	<h2>Who cares!?</h2>
+	<ul>
+	  <li>Hide contamination more indicative of carcass contamination</li>
+	  <li>Microbiome composition may impact risk assessment models for STEC</li>
+          <li>Knowledge of microbial community = better STEC prevention?</li>
+	</ul>
+      </section>
+    </section>
+
+    <section>
+      <h4>Final thoughts...</h4>
+      <%= image_tag "moo_675_533.jpg" %>
+    </section>
+
+    <!-- <section> -->
+    <!--   <section id="alpha-div-metrics"> -->
+    <!--     <a href="#/alpha-div-graphs"><h2>Alpha diversity metrics</h2></a></section> -->
+    
+    <!--   <section> -->
+    <!--     <h2>Chao1</h2></section> -->
+
+    <!--   <section> -->
+    <!--     <h2>Phylogenetic diversity</h2></section> -->
+
+    <!-- </section> -->
+
+    <section>
+      <section id="beta-div-metrics">
+	<a href="#/beta-div-graphs"><h2>Beta diversity metrics</h2></a></section>
+
+      <section id="weighted-unifrac-info">
+	<a href="#/weighted-unifrac-graph-all"><h2>UniFrac</h2></a>
+	<a href="http://bmf.colorado.edu/unifrac/help.psp#unifrac_test" target="_blank">
+	  <img src="http://bmf.colorado.edu/unifrac/images/unifrac_test.jpg">
+	</a>
+	<p class="citation">Source: http://bmf.colorado.edu/unifrac/help.psp#unifrac_test
+      </section>
+
+    </section>
+
+  </div>
+</div>
+<script src="vendor/assets/javascripts/head.min.js"></script>
+<script src="vendor/assets/javascripts/reveal.min.js"></script>
+
+<script>
+  // Required, even if empty.
+  Reveal.initialize({
+  controls: false,
+  progress: true,
+  history: true,
+  center: true,
+  transition: Reveal.getQueryHash().transition || 'default' // default/cube/page/concave/zoom/linear/fade/none
+  });
+</script>
