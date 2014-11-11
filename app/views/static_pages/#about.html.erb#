@@ -1,6 +1,0 @@
-<% provide(:title, 'VEIL Sigil') %>
-<div>
-  <%= image_tag "wommack-sigil-trans-small.gif",
-      style: "margin-left: 270px; margin-top: 8px;",
-      heigth: 500 %>
-</div>
