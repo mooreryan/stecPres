@@ -1,4 +1,6 @@
 <% provide(:title, 'More Than Skin Deep') %>
+
+
 <!-- Wrap the entire slide show in a div using the "reveal" class. -->
 <div class="reveal">
   <!-- Wrap all slides in a single "slides" class -->
@@ -187,37 +189,21 @@
 	<!-- 550 height -->
 	<%= image_tag "orders_trans.gif",
 	    height: 550 %><br></section></section>
+
+    <!--
+
+      Beta diversity
+
+      -->
+
+    <%= render 'layouts/beta_div' %>
+
+    <!--
+
+	SIGNIFICANT OTUS
+
+      -->
     
-    <section>
-      <section id="beta-div-graphs">
-	<a href="#/beta-div-metrics"><h2>Beta diversity</h2></a></section>
-
-      <section id="weighted-unifrac-graph-all">
-	<h3>Weighted UniFrac</h3>
-	<%= image_tag "color-by-date-2.png" %>
-	
-      </section>
-
-      <!-- <section id="weighted-unifrac-graph-date"> -->
-      <!--   <a href="#/weighted-unifrac-info"><h3>UniFrac (date)</h3></a> -->
-      <!--   <iframe name="emperor-date" width="800" height="550" src="wommack-sigil.html"></iframe><br> -->
-      <!--   <a target="emperor-date" -->
-      <!--      href="emperor/emperor_pcoa_plots_pooled_by_date/index.html">On</a> -->
-      <!--   <a target="emperor-date" href="wommack-sigil.html">Off</a> -->
-      <!-- </section> -->
-
-      <section id="weighted-unifrac-graph-infection-status">
-	<a href="#/weighted-unifrac-info">
-	  <h3>UniFrac</h3>
-	  <h4>Infection status</h4>
-	</a>
-	<!-- 500 height -->
-	<%= image_tag "unweighted-unifrac-by-InfectionStatus.png",
-	    height: 500 %>
-      </section>
-      
-    </section>
-
     <section>
       <section>
 	<h2>Significant OTUs</h2></section>
@@ -236,34 +222,9 @@
 
     </section>
 
-    <section>
-      <section id="alpha-div-graphs">
-	<a href="#/alpha-div-metrics"><h2>Alpha diversity</h2></a></section>
 
-      <section>
-	<h2>Jackknifed<br>alpha diversity</h2>
+    <%= render 'layouts/alpha_div' %>
 
-	<ul>
-	  <li>Pooled by number of STEC strains</li>
-	  <ul class='smaller'><li>100 jackknifes, 190,000 sequences each</li></ul>
-	  <li>Pool samples by STEC category</li>
-	  <ul class='smaller'><li>100 jackknifes, 140,000 sequences each</li></ul>
-	</ul>
-      </section>
-
-      <section>
-	<h3>Pooled by num STEC strains</h3>
-	<!-- height 500 -->
-	<%= image_tag "alpha_div_graph_num_stec_strains_condensed.gif",
-	    height: 500 %>
-      </section>
-
-      <section>
-	<h3>Pooled by infection status</h3>
-	<!-- height 500 -->
-	<%= image_tag "alpha_div_graph_InfectionStatus.gif", height: 500 %>
-      </section>
-    </section>
 
     <section>
       <section><h2>Wrap it up!</h2></section>

@@ -1,0 +1,27 @@
+section
+  section#alpha-div-graphs
+    a href="#/alpha-div-metrics"
+    h2 Alpha diversity
+
+  section
+    h2 Jackknifed alpha diversity
+    ul
+      li Pooled by number of STEC strains
+      ul.smaller
+        li 100 jackknifes, 190,000 sequences each
+      li Pool samples by STEC category
+      ul.smaller
+        li 100 jackknifes, 140,000 sequences each
+
+  section
+    h3 Pooled by num STEC strains
+    = image_tag "alpha_div_graph_num_stec_strains_condensed.gif", height: 500
+
+  section
+    h3 Pooled by infection status
+    = image_tag "alpha_div_graph_InfectionStatus.gif", height: 500
+
+
+  section#alpha-infection-status
+    h3 With fecal
+    = image_tag "alpha_div_infection_status_with_fecal.png", height: 500
