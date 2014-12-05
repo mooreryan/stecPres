@@ -23,9 +23,11 @@
       </section>
     </section>
 
+    <%= render 'layouts/site_map' %>
+    
     <!-- Intro -->
     <section>
-      <section><h2>Background</h2></section>
+      <section id="background"><h2>Background</h2></section>
 
       <section>
 	<h2>Fun facts!</h2>
@@ -86,7 +88,7 @@
     </section>
 
     <section>
-      <section><h2>Overview</h2></section>
+      <section id="overview"><h2>Overview</h2></section>
       <section>
 	<h2>Study overview</h2>
 	<ul>
@@ -119,7 +121,7 @@
 	<%= image_tag "feedlot.jpg" %>
       </section>
 
-      <section>
+      <section id="collecting-samples">
 	<h2>Collecting samples</h2>
 	<ul>
 	  <li>Summer 2013 - 12 weeks</li>
@@ -139,7 +141,7 @@
     </section>
 
     <section>
-      <section>
+      <section id="processing-samples">
 	<h2>Processing samples</h2></section>
 
       <section>
@@ -166,7 +168,7 @@
     </section>	
 
     <section>
-      <section>
+      <section id="16S-community-profile">
 	<div>
 	  <h2>16S Community profile</h2>
 	  <p><em>Just what's in there!?</em></p></div></section>
@@ -205,7 +207,7 @@
       -->
     
     <section>
-      <section>
+      <section id="significant-otus">
 	<h2>Significant OTUs</h2></section>
 
       <section>
@@ -224,10 +226,11 @@
 
 
     <%= render 'layouts/alpha_div' %>
+    <%= render 'layouts/pen_effect' %>
 
 
     <section>
-      <section><h2>Wrap it up!</h2></section>
+      <section id="wrap-it-up"><h2>Wrap it up!</h2></section>
       
       <section>
 	<h2>What we did...</h2>
@@ -259,7 +262,7 @@
       </section>
     </section>
 
-    <section>
+    <section id="final-thoughts">
       <h4>Final thoughts...</h4>
       <%= image_tag "moo_675_533.jpg" %>
     </section>
@@ -278,7 +281,7 @@
 
     <section>
       <section id="beta-div-metrics">
-	<a href="#/beta-div-graphs"><h2>Beta diversity metrics</h2></a></section>
+	<h2>Beta diversity metrics</h2></section>
 
       <section id="weighted-unifrac-info">
 	<a href="#/weighted-unifrac-graph-all"><h2>UniFrac</h2></a>
@@ -292,6 +295,7 @@
 
   </div>
 </div>
+
 <script src="vendor/assets/javascripts/head.min.js"></script>
 <script src="vendor/assets/javascripts/reveal.min.js"></script>
 
@@ -305,3 +309,4 @@
   transition: Reveal.getQueryHash().transition || 'default' // default/cube/page/concave/zoom/linear/fade/none
   });
 </script>
+
